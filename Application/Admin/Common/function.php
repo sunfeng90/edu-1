@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lenovo
- * Date: 2018/4/5
- * Time: 22:23
- */
-
-
 function getUserById($userId)
 {
     if (!$userId) {return false;}

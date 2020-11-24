@@ -16,7 +16,7 @@
   <?php echo W('Home/header', array());?>
   
   
-  <section class="section-course-list">
+  <section class="section-course-list" style="min-height: 540px;">
     <div class="container">
       <div class="course-list">
         <div class="row">
@@ -60,7 +60,7 @@
   <footer class="footer">
     <!-- <div class="footer-link"></div> -->
     <!-- position:fixed; left:0px; right:0px; bottom:0px;height: 100px; -->
-    <div class="copyright" style="background-color: #661B18; position: relative; left: 0; bottom: 0; top: 450px; width: 100%; ">
+    <div class="copyright" style="background-color: #661B18; left: 0; bottom: 0; width: 100%; ">
       <span style="color: aliceblue;">友情链接：</span><a href="www.zjnu.edu.cn" target="_blank" style="color: aliceblue;">浙江师范大学</a> |
         <a href="www.wk.zjnu.edu.cn" lo target="_blank" style="color: aliceblue;">浙江师范大学文科实验教学中心首页</a> | 
         <a href="http://localhost/edu/Admin/Index/index.html" target="_blank" style="color: aliceblue;">后台管理</a>

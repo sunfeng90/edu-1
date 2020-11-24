@@ -4,7 +4,7 @@ define(function(require, exports, module) {
   var Notify = require('common/bootstrap-notify')
   var VideoJS = require('video-js')
   var url = $('#lesson-video-content').data("url")
-
+  
   var player = VideoJS('lesson-video-content', {
     techOrder: ['flash','html5'],
     autoplay: true

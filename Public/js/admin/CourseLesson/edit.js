@@ -15,10 +15,6 @@ define(function(require, exports, module) {
       return z;
   }
 
-  function uploadCourseVideo() {
-    console.log('HelloWorld')
-  }
-
   exports.run = function () {
     var $content = $('input[name="content"]');
     var $form = $("#course-lesson-form");
@@ -128,9 +124,6 @@ define(function(require, exports, module) {
       $('input[name="media_id"]').val($this.data('file-id'));
       $('input[name="media_uri"]').val($this.data('file-uri'));
     });
-
-
-
   };
 
 })

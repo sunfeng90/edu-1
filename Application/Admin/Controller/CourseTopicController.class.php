@@ -3,11 +3,6 @@
  *          CourseTopicController(Admin\Controller\CourseTopicController.class.php)
  *
  *    功　　能：课程话题管理控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/18 10:45
- *    修　　改：2018/04/18
- *
  */
 
 namespace Admin\Controller;

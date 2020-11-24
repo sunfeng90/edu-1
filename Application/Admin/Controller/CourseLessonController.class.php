@@ -3,9 +3,6 @@
  *          CourseLessonController(Admin\Controller\CourseController.class.php)
  *
  *    功　　能：课程课时管理控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/10 16:53
  *    修　　改：2018/04/10
  *
  */

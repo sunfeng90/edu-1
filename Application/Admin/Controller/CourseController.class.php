@@ -3,9 +3,6 @@
  *          CourseController(Admin\Controller\CourseController.class.php)
  *
  *    功　　能：文件管理控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/10 10:45
  *    修　　改：2018/04/10
  *              2018/04/18 添加发布/关闭课程
  *

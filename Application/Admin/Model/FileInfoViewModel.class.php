@@ -1,11 +1,4 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: lenovo
- * Date: 2018/4/9
- * Time: 10:44
- */
 namespace Admin\Model;
 
 use Think\Model\ViewModel;

@@ -3,11 +3,6 @@
  *          IndexController(Admin\Controller\IndexController.class.php)
  *
  *    功　　能：后台首页控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/04
- *    修　　改：2018/04/04 增加了ajaxReturn，处理客户端的异步请求
- *
  */
 
 namespace Admin\Controller;

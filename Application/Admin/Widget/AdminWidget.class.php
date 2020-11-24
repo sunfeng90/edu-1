@@ -3,11 +3,6 @@
  *    AdminWidget(Admin\Controller\AdminWidget.class.php)
  *
  *    功　　能：后台首页Widget扩展控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/06
- *    修　　改：2018/04/06
- *
  */
 namespace Admin\Widget;
 use Admin\Controller\BaseController;

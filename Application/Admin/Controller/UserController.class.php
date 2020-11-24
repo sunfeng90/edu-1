@@ -3,11 +3,6 @@
  *          UserController(Admin\Controller\UserController.class.php)
  *
  *    功　　能：用户控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/08
- *    修　　改：2018/04/08
- *
  */
 
 namespace Admin\Controller;

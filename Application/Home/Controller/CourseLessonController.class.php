@@ -21,7 +21,7 @@ class CourseLessonController extends BaseController
         }
 
         $lesson = M('CourseLesson')->field('id,courseId,title,type,number,content,mediaUri')->where("id={$lessonId}")->find();
-        $lesson['mediauri'] = '/'.C('UPLOAD_DIR').$lesson['mediauri'];
+        $lesson['mediauri'] = '/edu'.C('UPLOAD_DIR').$lesson['mediauri'];
         // 获取课程话题
         $topic = M('CourseTopic')->where("lessonId={$lessonId}")->select();
         // 获取课程资料
@@ -54,7 +54,12 @@ class CourseLessonController extends BaseController
         $file = array();
 
         if ($lesson) {
-            $file['url'] = '/'.C('UPLOAD_DIR').$lesson['mediauri'];
+            // 去除路径中第一个出现的点字符
+            $formerUri = '/edu'.C('UPLOAD_DIR').$lesson['mediauri'];
+            $suffixname = substr(strrchr($formerUri, '.'), 1);  // 获取后缀名
+            $filename= str_replace(strrchr($formerUri, "."),"",$formerUri); // 获取文件名（不带后缀）
+            $cleanname = str_replace('.','',$filename); // 删除文件名中的点
+            $file['url'] = 'http://localhost'.$cleanname.'.'.$suffixname;
             $file['type'] = $lesson['type'];
         }
         

@@ -3,9 +3,6 @@
  *    BaseController(Admin\Controller\BaseController.class.php)
  *
  *    功　　能：后台首页基类控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/04
  *    修　　改：2018/04/04 增加了ajaxReturn，处理客户端的异步请求
  *              2018/04/20 增加了ajax请求的未登录拦截处理
  *                         系统自动更新会话错误修复

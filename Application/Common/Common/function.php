@@ -1,12 +1,5 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: lenovo
- * Date: 2018/4/5
- * Time: 15:44
- */
-
-/**
  * @param $userid
  * @param $module
  * @param $action

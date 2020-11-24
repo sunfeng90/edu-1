@@ -3,11 +3,6 @@
  *          FileController(Admin\Controller\FileController.class.php)
  *
  *    功　　能：文件管理控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/08 15:22
- *    修　　改：2018/04/08
- *
  */
 
 namespace Admin\Controller;

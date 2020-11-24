@@ -3,9 +3,6 @@
  *          LoginController(Admin\Controller\BaseController.class.php)
  *
  *    功　　能：后台首页登录控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/04
  *    修　　改：2018/04/04 增加了ajaxReturn，处理客户端的异步请求
  *              2018/04/19 修改了登录成功后和退出登录 跳转URL处理
  *                         服务端会话中加入nickname、roles、avatar信息暂存
