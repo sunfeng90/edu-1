@@ -26,7 +26,7 @@
             <div class="box-body">
 
               <div class="form-group">
-                <label for="send" class="col-sm-3 control-label">给新学员发送欢迎私信</label>
+                <label for="send" class="col-sm-3 control-label">给新同学发送欢迎私信</label>
                 <div class="col-sm-8 radio">
                   <label>
                     <input id="send" name="send"  type="radio" value="1" <eq name="setting.send" value="1">checked="checked"</eq> > 是
@@ -45,7 +45,7 @@
               </div>
 
               <div class="form-group">
-                <label class="col-sm-3 control-label">允许教员添加/移除学员</label>
+                <label class="col-sm-3 control-label">允许老师添加/移除学生</label>
                 <div class="col-sm-8 radio">
                   <label>
                     <input name="teacher_manage_student"  type="radio" value="1" <eq name="setting.teacher_manage_student" value="1">checked="checked"</eq> > 是
@@ -105,6 +105,6 @@
 
 <block name="script">
   <script type="text/javascript">
-    seajs.use('/Public/js/admin/setting/course.js')
+    seajs.use('/edu/Public/js/admin/setting/course.js')
   </script>
 </block>

@@ -1,13 +1,7 @@
 <?php
 /**
- *          RegisterController(Admin\Controller\RegisterController.class.php)
- *
+ *    RegisterController(Admin\Controller\RegisterController.class.php)
  *    功　　能：注册控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/05
- *    修　　改：
- *
  */
 
 namespace Admin\Controller;
@@ -89,7 +83,7 @@ class RegisterController extends Controller {
         $username = I('post.username', '');
         $password = I('post.password', '');
         $email = I('post.email', '');
-        $goto = I('post.goto', '/Admin/Login/index');
+        $goto = I('post.goto', '/edu/Admin/Login/index');
 
 
         // 表单数据合法性校验

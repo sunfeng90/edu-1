@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="__PUBLIC__/css/play.css">
   </head>
-  <body style="overflow:hidden;border:0px;">
+  <body style="overflow:auto;border:0px;">
     <div style="position:absolute;top:0;bottom:0;left:0;right:0;">
       <div id="lesson-video-content" class="local-video-player vjs-default-skin" data-user-id="{$user.id}" data-file-id="{$file.id}" data-file-type="{$file.type}" data-url="{$file.url}" data-player="{$player}" style="height:100%"></div>
     </div>
@@ -17,13 +17,13 @@
       app.version = '{:C('VERSION')}'
 
       app.config = {
-        loading_img_path: "\/Public\/images\/loading.svg"
+        loading_img_path: "\/edu\/Public\/images\/loading.svg"
       }
     </script>
     <script type="text/javascript" src="__PUBLIC__/lib/seajs/seajs/2.2.1/sea.js"></script>
     <script type="text/javascript" src="__PUBLIC__/lib/seajs-global-config.js"></script>
     <script type="text/javascript">
-      seajs.use('/Public/js/Home/Play/play-video.js')
+      seajs.use('/edu/Public/js/Home/Play/play-video.js')
     </script>
   </body>
 </html>

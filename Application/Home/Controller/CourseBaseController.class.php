@@ -1,14 +1,4 @@
 <?php
-/**
- *    CourseBaseController(Home\Controller\CourseBaseController.class.php)
- *
- *    功　　能：前台课程基类控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/20 16:37
- *    修　　改：2018/04/20
- *
- */
 namespace Home\Controller;
 use Think\Controller;
 use Think\Page;

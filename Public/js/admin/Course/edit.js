@@ -1,6 +1,3 @@
-/**
- * Created by lenovo on 2018/4/5.
- */
 define(function(require, exports, module){
 
 	var $ = require('jquery-3.3.1')
@@ -36,7 +33,5 @@ define(function(require, exports, module){
       required: true,
       display: '标题'
     })
-
   }
-
 })

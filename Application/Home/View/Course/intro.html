@@ -5,9 +5,9 @@
 <div class="course-intro-head">
  <div class="container">
    <ol class="breadcrumb">
-    <li><a href="/">首页</a></li>
-    <li><a href="/course/explore/intro">课程介绍</a></li>
-    <li class="active">EduSoho班级功能介绍</li>
+    <li><a href="/edu/">首页</a></li>
+    <li><a href="/edu/Home/Course/intro">课程介绍</a></li>
+    <li class="active">详情</li>
   </ol>
   <div class="course-detail clearfix">
 
@@ -58,7 +58,7 @@
               <p>分享</p>
             </a>
                       
-            <div class="dropdown-menu" data-title="EduSoho班级功能介绍" data-summary="" data-message="" data-url="" data-picture="">
+            <div class="dropdown-menu" data-title="详情" data-summary="" data-message="" data-url="" data-picture="">
               <a href="javascript:;" class="js-social-share" data-cmd="weixin" title="分享到微信" data-share="weixin" data-qrcode-url=""><i class="fa fa-weixin"></i></a>
               <a href="javascript:;" class="js-social-share" data-cmd="tsina" title="分享到新浪微博" data-share="weibo"><i class="fa fa-weibo"></i></a>
               <a href="javascript:;" class="js-social-share" data-cmd="qq" title="分享到QQ好友" data-share="qq"><i class="fa fa-qq"></i></a>
@@ -71,9 +71,9 @@
 
       <div class="learn">
         <empty name="member">
-        <a class="btn btn-warning btn-lg" href="#modal" data-toggle="modal" data-url="/Home/Course/learn?course_id={$course['id']}">加入学习</a>
+        <a class="btn btn-warning btn-lg" href="#modal" data-toggle="modal" data-url="/edu/Home/Course/learn?course_id={$course['id']}">加入学习</a>
         <else />
-        <a class="btn btn-warning btn-lg" href="/Home/Course/continue?course_id={$course['id']}">继续学习</a>
+        <a class="btn btn-warning btn-lg" href="/edu/Home/Course/continue?course_id={$course['id']}">继续学习</a>
         </empty>
       </div>
 
@@ -106,11 +106,11 @@
                 <eq name="item['itemType']" value="lesson">
                 <li class="item item-{$item.itemType} clearfix" id="{$key}">
                 <empty name="member">
-                <div data-target="#modal" data-toggle="modal" data-url="/Home/CourseLesson/preview?lesson_id={$item.id}">
+                <div data-target="#modal" data-toggle="modal" data-url="/edu/Home/CourseLesson/preview?lesson_id={$item.id}">
                   <i class="fa fa-file-movie-o text-danger"></i> {$item.number}：{$item.title}
                 </div>
                 <else />
-                <a href="/Home/CourseLesson/learn?lesson_id={$item.id}">
+                <a href="/edu/Home/CourseLesson/learn?lesson_id={$item.id}">
                   <i class="fa fa-file-movie-o text-danger"></i> {$item.number}：{$item.title}
                 </a>
                 </empty>
@@ -156,6 +156,6 @@
 
 <block name="script">
   <script type="text/javascript">
-    seajs.use('/Public/js/Home/Course/intro.js')
+    seajs.use('/edu/Public/js/Home/Course/intro.js')
   </script>
 </block>

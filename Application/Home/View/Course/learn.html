@@ -16,7 +16,7 @@
 
     $('#submit').click(function(){
     $('#learn-alert').hide()
-    $.post('/Home/Course/learn?course_id={$courseId}', function(res){
+    $.post('/edu/Home/Course/learn?course_id={$courseId}', function(res){
         if (res.success) {
           window.location.reload()
         } else{

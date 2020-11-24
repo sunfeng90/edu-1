@@ -1,14 +1,4 @@
 <?php
-/**
- *    CourseLessonController(Home\Controller\CourseLessonController.class.php)
- *
- *    功　　能：前台课程课时控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/20 15:49
- *    修　　改：2018/04/19
- *
- */
 namespace Home\Controller;
 use Think\Controller;
 use Think\Page;

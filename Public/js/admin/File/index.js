@@ -1,6 +1,3 @@
-/**
- * Created by lenovo on 2018/4/5.
- */
 define(function(require, exports, module){
 	var $ = require('jquery-3.3.1')
 	var Notify = require('bootstrap-notify')
@@ -33,7 +30,7 @@ define(function(require, exports, module){
 
 			// 使用ajax提交数据
 			$.ajax({
-				url: '/Admin/File/delete',
+				url: '/edu/Admin/File/delete',
 				type: 'POST',
 				data: {
 					check_ids: checkIds
@@ -75,7 +72,7 @@ define(function(require, exports, module){
 
 			// 使用ajax提交数据
 			$.ajax({
-				url: '/Admin/File/delete',
+				url: '/edu/Admin/File/delete',
 				type: 'POST',
 				data: {
 					check_ids: checkIds

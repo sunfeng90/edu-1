@@ -1,6 +1,3 @@
-/**
- * Created by lenovo on 2018/4/5.
- */
 define(function(require, exports, module){
 	var $ = require('jquery-3.3.1')
 
@@ -46,7 +43,7 @@ define(function(require, exports, module){
 
 			// 使用ajax提交数据
 			$.ajax({
-				url: '/Admin/Log/delete',
+				url: '/edu/Admin/Log/delete',
 				type: 'POST',
 				data: {
 					check_ids: checkIds
@@ -54,21 +51,22 @@ define(function(require, exports, module){
 				success: function(data){
 					if (data.success) {
 						// 提示删除成功
-						$.notify(
-							{
-								// options
-								icon: 'glyphicon glyphicon-ok-sign',
-								message: data.message
-							},
-							{
-								// settings
-								type: 'success',
-								offset: {
-									x: 10,
-									y: 60
-								}
-							}
-						)
+						// $.notify(
+						// 	{
+						// 		// options
+						// 		icon: 'glyphicon glyphicon-ok-sign',
+						// 		message: data.message
+						// 	},
+						// 	{
+						// 		// settings
+						// 		type: 'success',
+						// 		offset: {
+						// 			x: 10,
+						// 			y: 60
+						// 		}
+						// 	}
+						// )
+						Notify.success(data.message)
 						// 刷新页面
 						window.location.reload();
 
@@ -193,29 +191,29 @@ define(function(require, exports, module){
 
 			// 使用ajax提交数据
 			$.ajax({
-				url: '/Admin/Log/delete',
+				url: '/edu/Admin/Log/delete',
 				type: 'POST',
 				data: {
 					check_ids: checkIds
 				},
 				success: function(data){
 					if (data.success) {
-						$.notify(
-							{
-								// options
-								icon: 'glyphicon glyphicon-ok-sign',
-								message: data.message
-							},
-							{
-								// settings
-								type: 'success',
-								offset: {
-									x: 10,
-									y: 60
-								}
-							}
-						)
-
+						// $.notify(
+						// 	{
+						// 		// options
+						// 		icon: 'glyphicon glyphicon-ok-sign',
+						// 		message: data.message
+						// 	},
+						// 	{
+						// 		// settings
+						// 		type: 'success',
+						// 		offset: {
+						// 			x: 10,
+						// 			y: 60
+						// 		}
+						// 	}
+						// )
+						Notify.success(data.message)
 						// 刷新页面
 						setTimeout(function(){
 							window.location.reload();

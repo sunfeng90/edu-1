@@ -253,7 +253,6 @@ class CourseLessonController extends BaseController {
                 'seq'   => $seq,
                 'title' => $title,
                 'createdTime' => time(),
-
             ));
 
             if ($id) {
@@ -261,11 +260,16 @@ class CourseLessonController extends BaseController {
                     'success' => true,
                     'message' => '成功添加！'
                 ));
+                // echo "<script>alert('创建成功')</script>";
+                // echo "<script language=javascript> location.reload() </script>";
+                // Notify.success(response.message)
             } else {
                 $this->ajaxReturn(array(
                     'success' => false,
                     'message' => $courseChapterModel->getError()
                 ));
+                // echo "<script>alert('创建失败')</script>";
+                // echo "<script language=javascript> location.reload() </script>";
             }
 
         }

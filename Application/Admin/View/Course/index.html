@@ -52,7 +52,7 @@
                 <ul class="dropdown-menu dropdown-menu-right" role="menu">
                   <li><a href="{:U('Admin/CourseLesson/index', array('course_id' => $vo['id']))}"><i class="fa fa-file-video-o"></i>  课时管理</a></li>
                   <li><a href="{:U('Admin/CourseMaterial/listByCourseId', array('course_id' => $vo['id']))}"><i class="fa fa-file"></i>  文件管理</a></li>
-                  <li><a href="{:U('Admin/CourseLesson/index', array('course_id' => $vo['id']))}"><i class="fa fa-user"></i>  学员管理</a></li>
+                  <!-- <li><a href="{:U('Admin/CourseLesson/index', array('course_id' => $vo['id']))}"><i class="fa fa-user"></i>  学员管理</a></li> -->
                   <li class="divider"></li>
                   <switch name="vo.status">
                   <case value="published">
@@ -94,6 +94,6 @@
 
 <block name="script">
   <script type="text/javascript">
-    seajs.use('/Public/js/admin/Course/index.js')
+    seajs.use('/edu/Public/js/admin/Course/index.js')
   </script>
 </block>

@@ -37,5 +37,4 @@ define(function(require, exports, module){
     required: true,
     display: '密码'
   })
-
 })

@@ -22,14 +22,14 @@ return array(
                     'path'     => '1,2',
                     'children' => null
                 ),
-                array(
-                    'id'       => '3',
-                    'title'    => '用户设置',
-                    'url'      => 'Admin/Setting/user',
-                    'icon'     => 'circle-o',
-                    'path'     => '1,3',
-                    'children' => null
-                ),
+                // array(
+                //     'id'       => '3',
+                //     'title'    => '用户设置',
+                //     'url'      => 'Admin/Setting/user',
+                //     'icon'     => 'circle-o',
+                //     'path'     => '1,3',
+                //     'children' => null
+                // ),
                 array(
                     'id'       => '4',
                     'title'    => '课程设置',
@@ -63,17 +63,19 @@ return array(
                     'path'     => '6,7',
                     'children' => null
                 ),
-//                array(
-//                    'id'       => '8',
-//                    'title'    => '教师管理',
-//                    'url'      => '',
-//                    'icon'     => 'circle-o',
-//                    'path'     => '6,8',
-//                    'children' => null
-//                ),
+            //    array(
+            //        'id'       => '8',
+            //        'title'    => '教师管理',
+            //     //    'url'      => 'Admin/Teacher/index',
+            //        'url'      => '',
+            //        'icon'     => 'circle-o',
+            //        'path'     => '6,8',
+            //        'children' => null
+            //    ),
                 array(
                     'id'       => '9',
                     'title'    => '私信管理',
+                    // 'url'      => 'Admin/Message/index',
                     'url'      => '',
                     'icon'     => 'circle-o',
                     'path'     => '6,9',
@@ -111,14 +113,14 @@ return array(
                             'path'     => '10,11,23',
                             'children' => null
                         ),
-                        array(
-                            'id'       => '24',
-                            'title'    => '学员管理',
-                            'url'      => '',
-                            'icon'     => 'circle-o',
-                            'path'     => '10,11,24',
-                            'children' => null
-                        )
+                        // array(
+                        //     'id'       => '24',
+                        //     'title'    => '学员管理',
+                        //     'url'      => '',
+                        //     'icon'     => 'circle-o',
+                        //     'path'     => '10,11,24',
+                        //     'children' => null
+                        // )
                     )
                 ),
                 array(

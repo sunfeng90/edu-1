@@ -7,7 +7,7 @@
   <div class="course-learn">
     <div class="course-learn-dashboard course-learn-dashboard-open" id="course-learn-dashboard">
       <div class="dashboard-content">
-        <a class="btn btn-warning back" href="/Home/Course/intro/course_id/{$lesson.courseid}"><span class="fa fa-chevron-left"></span> 返回课程</a>
+        <a class="btn btn-warning back" href="/edu/Home/Course/intro/course_id/{$lesson.courseid}"><span class="fa fa-chevron-left"></span> 返回课程</a>
         <div class="dashboard-head">
           <span class="lesson-title">课时{$lesson.number}：{$lesson.title}</span>
         </div>
@@ -24,7 +24,7 @@
         </div>
         <div class="dashboard-foot clearfix">
           <div class="pull-right">
-            <button class="btn btn-warning" data-role="finish-lesson" style=""><span class="fa fa-square-o"></span> 学过了</button>
+            <a class="btn btn-warning"  href="/edu/" style=""><span class="fa fa-square-o"></span> 学过了</a>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
               <h4 class="">课时资料</h4>
               <ul>
                 <volist name="files" id="file">
-                  <li><a href="/Home/File/download/id/{$file.fileid}" target="_blank">{$file.title}</a><small> [{$file.size|format_bytes}]</small></li>
+                  <li><a href="/edu/Home/File/download/id/{$file.fileid}" target="_blank">{$file.title}</a><small> [{$file.size|format_bytes}]</small></li>
                 </volist>
               </ul>
             </empty>
@@ -51,7 +51,7 @@
           <div class="tab-pane" id="toolbar-topic">
             <div class="question-list-pane">
               <div data-role="list-pane" >
-                <form id="lesson-question-form" method="post" action="/CourseLesson/addQuestion/course_id/{$lesson.courseid}/lesson_id/{$lesson.id}">
+                <form id="lesson-question-form" method="post" action="/edu/CourseLesson/addQuestion/course_id/{$lesson.courseid}/lesson_id/{$lesson.id}">
 
                   <div class="form-group">
                     <div class="controls">
@@ -98,6 +98,6 @@
     lesson.id = '{$lesson.id}';
     lesson.type = '{$lesson.type}';
     lesson.courseId = '{$lesson.courseid}';
-    seajs.use('/Public/js/Home/CourseLesson/learn.js')
+    seajs.use('/edu/Public/js/Home/CourseLesson/learn.js')
   </script>
 </block>

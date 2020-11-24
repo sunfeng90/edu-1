@@ -1,6 +1,3 @@
-/**
- * Created by lenovo on 2018/4/5.
- */
 define(function(require, exports, module){
 	var $ = require('jquery-3.3.1')
 	var Notify = require('common/bootstrap-notify')
@@ -13,7 +10,6 @@ define(function(require, exports, module){
 
 	$('#checkall').click(function(){
 		var checked = this.checked
-
 		$checkbox.each(function(){
 			this.checked = checked
 		})

@@ -36,7 +36,7 @@ a:hover, a:focus {
     transition: all .3s ease;
 }
 .nav.navbar-nav>li>a:hover{
-	color: #f39c12;
+	color:#661B18;
 }
 .navbar .container{
 	padding: 0;
@@ -127,7 +127,7 @@ a:hover, a:focus {
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     color: #fff;
     text-decoration: none;
-    background-color: #f39c12;
+    background-color:#661B18;
 }
 .section-course-list{
 	position: relative;

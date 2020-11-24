@@ -1,6 +1,3 @@
-/**
- * Created by lenovo on 2018/4/5.
- */
 define(function(require, exports, module){
 
 	var $ = require('jquery-3.3.1')
@@ -34,7 +31,7 @@ define(function(require, exports, module){
 
 			// 使用ajax提交数据
 			$.ajax({
-				url: '/Admin/Log/delete',
+				url: '/edu/Admin/Log/delete',
 				type: 'POST',
 				data: {
 					check_ids: checkIds
@@ -78,7 +75,7 @@ define(function(require, exports, module){
 
 			// 使用ajax提交数据
 			$.ajax({
-				url: '/Admin/Log/delete',
+				url: '/edu/Admin/Log/delete',
 				type: 'POST',
 				data: {
 					check_ids: checkIds
@@ -97,5 +94,4 @@ define(function(require, exports, module){
 			})
 		}
 	})
-
 })

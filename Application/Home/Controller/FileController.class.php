@@ -1,15 +1,4 @@
 <?php
-/**
- *    FileController(Home\Controller\FileController.class.php)
- *
- *    功　　能：前台文件控制器
- *
- *    作　　者：李康
- *    完成时间：2018/04/22 21:52
- *    修　　改：2018/04/22 20:46 文件下载错误修复
- *              
- *
- */
 namespace Home\Controller;
 use Think\Controller;
 use Org\Util\Request;

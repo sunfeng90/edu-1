@@ -1,99 +1,89 @@
-/**
- * Created by lenovo on 2018/4/5.
- */
-define(function(require, exports, module){
-	var $ = require('jquery-3.3.1')
-	var Notify = require('common/bootstrap-notify')
-	
-	var $checkbox = $('input[name="check"]')
+define(function(require, exports, module) {
+    var $ = require('jquery-3.3.1')
+    var Notify = require('common/bootstrap-notify')
 
-	var $checkbox = $('input[name="check"]')
+    var $checkbox = $('input[name="check"]')
 
-	$('#checkall').click(function(){
-		var checked = this.checked
+    var $checkbox = $('input[name="check"]')
 
-		$checkbox.each(function(){
-			this.checked = checked
-		})
-	})
+    $('#checkall').click(function() {
+        var checked = this.checked
 
-  require('confirmation')
+        $checkbox.each(function() {
+            this.checked = checked
+        })
+    })
 
-	$('.delete').confirmation({
-		title: '确认要删除吗？',
-		singleton: true,
-		btnOkLabel: '是',
-		btnCancelLabel: '否',
-		onConfirm: function(){
-			var id = this.$element.data('id')
-			var checkIds = []
+    require('confirmation')
 
-			checkIds.push(id)
+    $('.delete').confirmation({
+        title: '确认要删除吗？',
+        singleton: true,
+        btnOkLabel: '是',
+        btnCancelLabel: '否',
+        onConfirm: function() {
+            var id = this.$element.data('id')
+            var checkIds = []
 
-			// 使用ajax提交数据
-			$.ajax({
-				url: '/Admin/CourseMaterial/delete',
-				type: 'POST',
-				data: {
-					check_ids: checkIds
-				},
-				success: function(response){
-					if (response.success) {
-						// 提示删除成功
-						Notify.success(response.message)
-						// 刷新页面
-						window.location.reload()
+            checkIds.push(id)
 
-					} else {
-						// 提示删除失败
-						Notify.danger(response.message)
-					}
-				}
-			})
-		}
-	})
+            // 使用ajax提交数据
+            $.ajax({
+                url: '/Admin/CourseMaterial/delete',
+                type: 'POST',
+                data: {
+                    check_ids: checkIds
+                },
+                success: function(response) {
+                    if (response.success) {
+                        // 提示删除成功
+                        Notify.success(response.message)
+                            // 刷新页面
+                        window.location.reload()
+                    } else {
+                        // 提示删除失败
+                        Notify.danger(response.message)
+                    }
+                }
+            })
+        }
+    })
 
-	$('#deleteAll').confirmation({
-		title: '确认要删除吗？',
-		singleton: true,
-		btnOkLabel: '是',
-		btnCancelLabel: '否',
-		onConfirm: function(){
-			var checkIds = []
+    $('#deleteAll').confirmation({
+        title: '确认要删除吗？',
+        singleton: true,
+        btnOkLabel: '是',
+        btnCancelLabel: '否',
+        onConfirm: function() {
+            var checkIds = []
+            $checkbox.each(function() {
+                if (this.checked) {
+                    checkIds.push(this.value)
+                }
+            })
 
-			$checkbox.each(function(){
-				if(this.checked){
-					checkIds.push(this.value)
-				}
-			})
+            if (checkIds.length <= 0) {
+                Notify.danger('请选择至少一条记录')
+                return
+            }
 
-			if (checkIds.length <= 0) {
-				Notify.danger('请选择至少一条记录')
-				return
-			}
-
-			// 使用ajax提交数据
-			$.ajax({
-				url: '/Admin/CourseMaterial/delete',
-				type: 'POST',
-				data: {
-					check_ids: checkIds
-				},
-				success: function(response){
-					if (response.success) {
-						Notify.success(response.message)
-						// 刷新页面
-						window.location.reload();
-					} else {
-						Notify.danger(response.message)
-					}
-				}
-			})
-		}
-	})
-
-
-
-
-
+            // 使用ajax提交数据
+            $.ajax({
+                url: '/Admin/CourseMaterial/delete',
+                type: 'POST',
+                data: {
+                    check_ids: checkIds
+                },
+                success: function(response) {
+                    if (response.success) {
+                        Notify.success(response.message)
+                            // 刷新页面
+                        window.location.reload();
+                    } else {
+                        Notify.danger(response.message)
+                    }
+                }
+            })
+        }
+    })
 })

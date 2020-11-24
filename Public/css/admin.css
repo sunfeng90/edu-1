@@ -10,8 +10,8 @@ ul,li{list-style: none;}
 .mb20{margin-bottom: 20px;}
 .mb40{margin-bottom: 40px;}
 .skin-yellow-light .pagination > .active > a, .skin-yellow-light .pagination > .active > span, .skin-yellow-light .pagination > .active > a:hover, .skin-yellow-light .pagination > .active > span:hover, .skin-yellow-light .pagination > .active > a:focus, .pagination > .active > span:focus{
-	background-color:#f39c12;
-	border-color: #f39c12;
+	background-color:#661B18;
+	border-color: #661B18;
 }
 .radio label, .checkbox label{
 	padding-right: 25px;
@@ -183,7 +183,7 @@ ul.sortable-list li.placeholder, ol.sortable-list li.placeholder {
     background-color: #efefef;
 }
 .file-chooser-main .nav-tabs >li.active a,.file-chooser-main .nav-tabs >li.active a:hover{
-	background-color: #f39c12;
+	background-color:#661B18;
 	color: #fff;
     font-weight: normal;
     border: none;

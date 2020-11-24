@@ -15,6 +15,10 @@ define(function(require, exports, module) {
       return z;
   }
 
+  function uploadCourseVideo() {
+    console.log('HelloWorld')
+  }
+
   exports.run = function () {
     var $content = $('input[name="content"]');
     var $form = $("#course-lesson-form");
@@ -40,7 +44,6 @@ define(function(require, exports, module) {
           })
         }
       })
-
     validator.on('formValidate', function(elemetn, event) {
         var content = getEditorContent(editor);
         $content.val(content);
@@ -81,7 +84,7 @@ define(function(require, exports, module) {
     var $message = $('.file-chooser-uploader-progress-message');
 
     $("#file-selected").dmUploader({
-      url: '/Admin/File/add',
+      url: '/edu/Admin/File/add',
       extraData: {
          "course_id": $('input[name="course_id"]').val()
       },
@@ -94,7 +97,6 @@ define(function(require, exports, module) {
       },
       onUploadSuccess: function (id, data) {
         $progress.hide();
-
         if (data.success) {
           $message.text('上传成功！').fadeIn();
           setTimeout(function(){
@@ -106,7 +108,6 @@ define(function(require, exports, module) {
           $('input[name="media_id"]').val(data.file.id);
           $('input[name="media_uri"]').val(data.file.uri);
         }
-
       },
       onUploadError: function (id, xhr, status, errorThrown) {
         $progress.hide();
