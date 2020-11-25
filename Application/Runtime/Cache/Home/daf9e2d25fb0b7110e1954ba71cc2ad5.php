@@ -13,8 +13,8 @@
 
 <body style="overflow:auto;border:0px;">
   <div style="display: flex; display: -webkit-flex; align-items:center; justify-content:center;height: 100%; width: 100%;">
-    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="300px" height="400px"
-      poster="/edu/Public/images/course2.jpg" autoplay="true">
+    <video id="example_video_1" class="video-js vjs-default-skin" id="lesson-video-content" controls preload="auto"
+      poster="/edu/Public/images/course2.jpg" autoplay="true" style="height: 600px; width: 100%;">
       <source src="<?php echo ($file["url"]); ?>" type="video/mp4">
     </video>
     <!-- <div id="lesson-video-content" class="local-video-player vjs-default-skin" data-user-id="<?php echo ($user["id"]); ?>"

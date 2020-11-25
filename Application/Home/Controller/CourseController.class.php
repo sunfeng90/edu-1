@@ -161,4 +161,12 @@ class CourseController extends CourseBaseController {
             'content' => $this->fetch('course-topic')
         ));
     }
+
+    public function getCourseListByStatus() {
+        $status = I('get.status', 'published');
+
+        $course = M('Course')->where("status={$status}")->find();
+    	$this->assign('data', $data);
+    	$this->display();
+    }
 }

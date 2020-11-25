@@ -79,14 +79,14 @@
                 </button>
                 <ul class="dropdown-menu dropdown-menu-right" role="menu">
                   <li><a href="<?php echo U('Admin/CourseLesson/index', array('course_id' => $vo['id']));?>"><i class="fa fa-file-video-o"></i>  课时管理</a></li>
-                  <li><a href="<?php echo U('Admin/CourseMaterial/listByCourseId', array('course_id' => $vo['id']));?>"><i class="fa fa-file"></i>  文件管理</a></li>
+                  <!-- <li><a href="<?php echo U('Admin/CourseMaterial/listByCourseId', array('course_id' => $vo['id']));?>"><i class="fa fa-file"></i>  文件管理</a></li> -->
                   <!-- <li><a href="<?php echo U('Admin/CourseLesson/index', array('course_id' => $vo['id']));?>"><i class="fa fa-user"></i>  学员管理</a></li> -->
                   <li class="divider"></li>
                   <?php switch($vo["status"]): case "published": ?><li><a class="ajax-op" href="javascript:" data-url="<?php echo U('Admin/Course/publish', array('course_id' => $vo['id'], 'published' => 'closed'));?>"><i class="fa fa-times-circle-o"></i>  关闭课程</a></li><?php break;?>
                   <?php default: ?>
-                  <li><a class="ajax-op" href="javascript:" data-url="<?php echo U('Admin/Course/publish', array('course_id' => $vo['id'], 'published' => 'published'));?>"><i class="fa fa-check-circle-o"></i>  发布课程</a></li>
+                  <!-- <li><a class="ajax-op" href="javascript:" data-url="<?php echo U('Admin/Course/publish', array('course_id' => $vo['id'], 'published' => 'published'));?>"><i class="fa fa-check-circle-o"></i>  发布课程</a></li> -->
                   </case><?php endswitch;?>
-                  <li><a class="ajax-op" href="javascript:" data-url=""><i class="fa fa-thumbs-up"></i>  推荐课程</a></li>
+                  <!-- <li><a class="ajax-op" href="javascript:" data-url=""><i class="fa fa-thumbs-up"></i>  推荐课程</a></li> -->
                 </ul>
               </div>
             </td>

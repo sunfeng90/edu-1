@@ -20,7 +20,8 @@
  <div class="container">
    <ol class="breadcrumb">
     <li><a href="/edu/">首页</a></li>
-    <li><a href="/edu/Home/Course/intro">课程介绍</a></li>
+    <li><a href="">课程介绍</a></li>
+    <!-- <li><a href="/edu/Home/Course/intro">课程介绍</a></li> -->
     <li class="active">详情</li>
   </ol>
   <div class="course-detail clearfix col-md-12 col-lg-12">
@@ -33,7 +34,8 @@
     <div class="course-info">
       <h2 class="title"><?php echo ($course["title"]); ?></h2>
       <div class="subtitle"><?php echo ($course["subtitle"]); ?></div>
-      <div class="metas">
+      <p>观看总人数：100（人）</p>
+      <!-- <div class="metas">
         <div class="score">
           <i class="fa fa-star-o"></i>
           <i class="fa fa-star-o"></i>
@@ -42,7 +44,7 @@
           <i class="fa fa-star-o"></i>
           <span>(0人)</span>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- <div class="course-op clearfix">
@@ -104,9 +106,9 @@
 
           <ul class="nav nav-tabs" role="tablist">
             <li class="active"><a href="#course-lesson" role="tab" data-toggle="tab">课时列表</a></li>
-            <?php if(!empty($member)): ?><li><a href="#course-material" role="tab" data-toggle="tab">资料</a></li><?php endif; ?>
-            <li><a href="#course-comment" role="tab" data-toggle="tab">评价</a></li>
-            <li><a href="#course-topic" role="tab" data-toggle="tab">话题</a></li>
+            <!-- <?php if(!empty($member)): ?><li><a href="#course-material" role="tab" data-toggle="tab">资料</a></li><?php endif; ?> -->
+            <!-- <li><a href="#course-comment" role="tab" data-toggle="tab">评价</a></li> -->
+            <!-- <li><a href="#course-topic" role="tab" data-toggle="tab">话题</a></li> -->
           </ul>
 
           <div class="tab-content">
@@ -162,9 +164,10 @@
     <!-- <div class="footer-link"></div> -->
     <!-- position:fixed; left:0px; right:0px; bottom:0px;height: 100px; -->
     <div class="copyright" style="background-color: #661B18; left: 0; bottom: 0; width: 100%; ">
-      <span style="color: aliceblue;">友情链接：</span><a href="www.zjnu.edu.cn" target="_blank" style="color: aliceblue;">浙江师范大学</a> |
-        <a href="www.wk.zjnu.edu.cn" lo target="_blank" style="color: aliceblue;">浙江师范大学文科实验教学中心首页</a> | 
-        <a href="http://localhost/edu/Admin/Index/index.html" target="_blank" style="color: aliceblue;">后台管理</a>
+      <span style="color: aliceblue;">友情链接：</span>
+        <!-- <a href="www.zjnu.edu.cn" target="_blank" style="color: aliceblue;">浙江师范大学</a> |
+        <a href="www.wk.zjnu.edu.cn" lo target="_blank" style="color: aliceblue;">浙江师范大学文科实验教学中心首页</a> |  -->
+        <a href="http://localhost/edu/Admin/Index/index.html" target="_blank" style="color: blue;text-decoration:underline">后台管理</a>
       <div class="container" style="color: aliceblue;">Copyright ©2020- wkzx.zjnu.edu.cn Corporation, All Rights Reserved
       </div>
     </div>

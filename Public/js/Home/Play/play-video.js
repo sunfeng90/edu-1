@@ -1,5 +1,5 @@
 define(function(require, exports, module) {
-  require('video-js-css')
+  // require('video-js-css')
   var $ = require('jquery')
   var Notify = require('common/bootstrap-notify')
   var VideoJS = require('video-js')

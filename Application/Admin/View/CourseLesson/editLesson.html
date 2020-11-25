@@ -76,7 +76,7 @@
                         <div class="file-chooser-uploader-control" id="file-selected">
                           <div class="btn btn-default">
                             <i class="fa fa-folder-o fa-fw"></i> 选择文件
-                            <input type="file" id="video_file" @change="uploadCourseVid"/>
+                            <input type="file" id="video_file"/>
                           </div>
                         </div>
 

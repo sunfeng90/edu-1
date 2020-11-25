@@ -47,10 +47,10 @@
                 <h3 class="box-title">课时列表</h3>
                 <div class="pull-right">
 
-                    <a class="btn btn-warning btn-sm"
+                    <!-- <a class="btn btn-warning btn-sm"
                         href="<?php echo U('Admin/CourseMaterial/listByCourseId', array('course_id' => $course['id']));?>">
                         <i class="fa fa-file"></i>&nbsp;&nbsp;文件管理
-                    </a>
+                    </a> -->
 
                     <!-- <a class="btn btn-warning btn-sm" href="<?php echo U('Admin/CourseMaterial/uploadModal', array('course_id' => $course['id']));?>">
             <i class="fa fa-user"></i>&nbsp;&nbsp;学员管理
@@ -67,26 +67,26 @@
                                 <div class="item-content">
                                     <i class="fa fa-file-photo-o text-success"></i> 第 <span
                                         class="number"><?php echo ($item["number"]); ?></span>课时：<?php echo ($item["title"]); ?>
-                                    <?php if(($item['status']) != "published"): ?><span class="text-warning">（未发布）</span><?php endif; ?>
+                                    <!-- <?php if(($item['status']) != "published"): ?><span class="text-warning">（未发布）</span><?php endif; ?> -->
                                 </div>
                                 <div class="item-tools">
                                     <div class="btn" data-toggle="modal" data-target="#modal" data-backdrop="static"
                                         data-url="<?php echo U('Admin/CourseLesson/editLesson', array('course_id' => $course['id'],'lesson_id' => $item['id']));?>">
                                         <i class="fa fa-pencil"></i>&nbsp;&nbsp;编辑</div>
-                                    <div class="btn"><i class="fa fa-eye"></i>&nbsp;&nbsp;预览</div>
+                                    <!-- <div class="btn"><i class="fa fa-eye"></i>&nbsp;&nbsp;预览</div> -->
                                     <div class="btn-group">
                                         <div class="btn dropdown-toggle" data-toggle="dropdown">
                                             <span class="fa fa-angle-down"></span>&nbsp;&nbsp;更多
                                         </div>
                                         <ul class="dropdown-menu dropdown-menu-right">
-                                            <li><a href="#" data-toggle="modal" data-target="#modal"
+                                            <!-- <li><a href="#" data-toggle="modal" data-target="#modal"
                                                     data-backdrop="static"
                                                     data-url="<?php echo U('Admin/CourseLesson/addMaterial', array('course_id' => $course['id'],'lesson_id' => $item['id']));?>"><i
                                                         class="glyphicon glyphicon-paperclip"></i> 添加资料</a></li>
-                                            <li class="divider"></li>
-                                            <?php if(($item['status']) == "published"): ?><li><a href="#"><i class="fa fa-times-circlr-o"></i> 取消发布</a></li>
+                                            <li class="divider"></li> -->
+                                            <!-- <?php if(($item['status']) == "published"): ?><li><a href="#"><i class="fa fa-times-circlr-o"></i> 取消发布</a></li>
                                                 <?php else: ?>
-                                                <li><a href="#"><i class="fa fa-check-circle-o"></i> 发布</a></li><?php endif; ?>
+                                                <li><a href="#"><i class="fa fa-check-circle-o"></i> 发布</a></li><?php endif; ?> -->
                                             <li><a href="#"><i class="fa fa-trash"></i> 删除</a></li>
                                         </ul>
                                     </div>

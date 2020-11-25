@@ -58,22 +58,22 @@
             <th class="text-center">用户名</th>
             <th class="text-center">用户角色</th>
             <th class="text-center">Email</th>
-            <th class="text-center">注册IP</th>
+            <!-- <th class="text-center">注册IP</th>
             <th class="text-center">注册时间</th>
-            <th class="text-center">最后登录时间</th>
+            <th class="text-center">最后登录时间</th> -->
             <th class="text-center">操作</th>
           </tr>
           <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
               <td class="text-center">
                 <input name="check" type="checkbox" value="<?php echo ($vo["id"]); ?>"/>
               </td>
-              <td class="text-right"><?php echo ($vo["id"]); ?></td>
+              <td class="text-center"><?php echo ($vo["id"]); ?></td>
               <td class="text-center"><?php echo ($vo["nickname"]); ?></td>
-              <td><?php echo ($vo["roles"]); ?></td>
-              <td><?php echo ($vo["email"]); ?></td>
-              <td class="text-center"><?php echo ($vo["loginip"]); ?></td>
+              <td class="text-center"><?php echo ($vo["roles"]); ?></td>
+              <td class="text-center"><?php echo ($vo["email"]); ?></td>
+              <!-- <td class="text-center"><?php echo ($vo["loginip"]); ?></td>
               <td class="text-center"><?php echo ($vo["createdtime"]); ?></td>
-              <td class="text-center"><?php echo ($vo["logintime"]); ?></td>
+              <td class="text-center"><?php echo ($vo["logintime"]); ?></td> -->
               <td class="text-center">
                 <span class="btn btn-warning btn-xs" data-userid="<?php echo ($vo["id"]); ?>"><i class="fa fa-edit"></i> 编辑</span>
                 <span class="btn btn-danger btn-xs delete" data-placement="left" data-userid="<?php echo ($vo["id"]); ?>"><i class="fa fa-trash"></i> 删除</span>

@@ -12,22 +12,24 @@
             <div class="course-item">
               <div class="course-img">
                 <a href="/edu/Home/Course/intro?course_id={$course.id}" target="_blank">
-                  <img src="__PUBLIC__/images/course1.jpg" alt="网校基本设置" class="img-responsive">
+                  <img src="__PUBLIC__/images/course1.jpg" alt="课程展示系统基本设置" class="img-responsive">
                 </a>
               </div>
               <div class="course-info">
                 <div class="title">
-                  <a class="link-dark" href="/course/4" target="_blank">{$course.title}</a>
+                  <a class="link-dark" href="/edu/Home/Course/intro?course_id={$course.id}" target="_blank">{$course.title}</a>
                 </div>
                 <div class="metas clearfix">
-                  <span class="num"><i class="fa fa-user"></i>{$course.studentnum}</span>
-                  <span class="comment"><i class="fa fa-comment"></i>{$course.postnum}</span>
+                  <!-- <span class="num"><i class="fa fa-user"></i>{$course.studentnum}</span>
+                  <span class="comment"><i class="fa fa-comment"></i>{$course.postnum}</span> -->
                   <span class="views"><i class="fa fa-eye"></i>{$course.hitnum}</span>
-              <!--     <span class="course-price-widget">
-                    <span class="price">
-                      <span class="text-warnning">免费</span>
-                    </span>
-                  </span> -->
+                  <!--  
+                    <span class="course-price-widget">
+                      <span class="price">
+                        <span class="text-warnning">免费</span>
+                      </span>
+                    </span> 
+                  -->
                 </div>
               </div>
             </div>

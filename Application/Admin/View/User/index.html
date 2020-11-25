@@ -29,9 +29,9 @@
             <th class="text-center">用户名</th>
             <th class="text-center">用户角色</th>
             <th class="text-center">Email</th>
-            <th class="text-center">注册IP</th>
+            <!-- <th class="text-center">注册IP</th>
             <th class="text-center">注册时间</th>
-            <th class="text-center">最后登录时间</th>
+            <th class="text-center">最后登录时间</th> -->
             <th class="text-center">操作</th>
           </tr>
           <volist name="data" id="vo">
@@ -39,13 +39,13 @@
               <td class="text-center">
                 <input name="check" type="checkbox" value="{$vo.id}"/>
               </td>
-              <td class="text-right">{$vo.id}</td>
+              <td class="text-center">{$vo.id}</td>
               <td class="text-center">{$vo.nickname}</td>
-              <td>{$vo.roles}</td>
-              <td>{$vo.email}</td>
-              <td class="text-center">{$vo.loginip}</td>
+              <td class="text-center">{$vo.roles}</td>
+              <td class="text-center">{$vo.email}</td>
+              <!-- <td class="text-center">{$vo.loginip}</td>
               <td class="text-center">{$vo.createdtime}</td>
-              <td class="text-center">{$vo.logintime}</td>
+              <td class="text-center">{$vo.logintime}</td> -->
               <td class="text-center">
                 <span class="btn btn-warning btn-xs" data-userid="{$vo.id}"><i class="fa fa-edit"></i> 编辑</span>
                 <span class="btn btn-danger btn-xs delete" data-placement="left" data-userid="{$vo.id}"><i class="fa fa-trash"></i> 删除</span>

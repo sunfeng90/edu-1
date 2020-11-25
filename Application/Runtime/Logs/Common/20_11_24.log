@@ -82,3 +82,39 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
 ERR: 无法加载模块:Course
 
+[ 2020-11-24T20:50:19+08:00 ] ::1 /edu/course/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+ERR: 无法加载模块:Course
+
+[ 2020-11-24T20:51:00+08:00 ] ::1 /edu/course/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+ERR: 无法加载模块:Course
+
+[ 2020-11-24T20:51:03+08:00 ] ::1 /edu/course/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+ERR: 无法加载模块:Course
+
+[ 2020-11-24T20:51:05+08:00 ] ::1 /edu/course/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+ERR: 无法加载模块:Course
+
+[ 2020-11-24T20:51:08+08:00 ] ::1 /edu/course/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+ERR: 无法加载模块:Course
+
+[ 2020-11-24T20:55:32+08:00 ] ::1 /edu/course/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+ERR: 无法加载模块:Course
+

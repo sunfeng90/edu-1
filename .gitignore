@@ -1,0 +1,11 @@
+vendor
+Uploads
+Application
+Application\Runtime
+Application\Runtime\Cache
+Application\Runtime\Data
+Application\Runtime\Logs
+Application\Runtime\Logs\Admin
+Application\Runtime\Logs\Common
+Application\Runtime\Logs\Home
+Application\Runtime\Temp

@@ -38,7 +38,6 @@ class CourseLessonController extends BaseController
      */
     public function preview()
     {
-
     }
 
     public function playVideo()

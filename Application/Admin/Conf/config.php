@@ -8,82 +8,6 @@ return array(
 
     'MENU' => array(
         array(
-            'id'       => '1',
-            'title'    => '系统管理',
-            'url'      => '#',
-            'icon'     => 'gear',
-            'path'     => '1',
-            'children' => array(
-                array(
-                    'id'       => '2',
-                    'title'    => '网站设置',
-                    'url'      => 'Admin/Setting/website',
-                    'icon'     => 'circle-o',
-                    'path'     => '1,2',
-                    'children' => null
-                ),
-                // array(
-                //     'id'       => '3',
-                //     'title'    => '用户设置',
-                //     'url'      => 'Admin/Setting/user',
-                //     'icon'     => 'circle-o',
-                //     'path'     => '1,3',
-                //     'children' => null
-                // ),
-                array(
-                    'id'       => '4',
-                    'title'    => '课程设置',
-                    'url'      => 'Admin/Setting/course',
-                    'icon'     => 'circle-o',
-                    'path'     => '1,4',
-                    'children' => null
-                ),
-                array(
-                    'id'       => '5',
-                    'title'    => '系统日志',
-                    'url'      => 'Admin/Setting/log',
-                    'icon'     => 'circle-o',
-                    'path'     => '1,5',
-                    'children' => null
-                )
-            )
-        ),
-        array(
-            'id'       => '6',
-            'title'    => '用户管理',
-            'icon'     => 'user',
-            'url'      => '#',
-            'path'     => '6',
-            'children' => array(
-                array(
-                    'id'       => '7',
-                    'title'    => '用户管理',
-                    'url'      => 'Admin/User/index',
-                    'icon'     => 'circle-o',
-                    'path'     => '6,7',
-                    'children' => null
-                ),
-            //    array(
-            //        'id'       => '8',
-            //        'title'    => '教师管理',
-            //     //    'url'      => 'Admin/Teacher/index',
-            //        'url'      => '',
-            //        'icon'     => 'circle-o',
-            //        'path'     => '6,8',
-            //        'children' => null
-            //    ),
-                array(
-                    'id'       => '9',
-                    'title'    => '私信管理',
-                    // 'url'      => 'Admin/Message/index',
-                    'url'      => '',
-                    'icon'     => 'circle-o',
-                    'path'     => '6,9',
-                    'children' => null
-                )
-            )
-        ),
-        array(
             'id'       => '10',
             'title'    => '课程管理',
             'icon'     => 'graduation-cap',
@@ -92,7 +16,7 @@ return array(
             'children' => array(
                 array(
                     'id'       => '11',
-                    'title'    => '查看课程',
+                    'title'    => '课程管理',
                     'url'      => 'Admin/Course/index',
                     'icon'     => 'circle-o',
                     'path'     => '10,11',
@@ -123,14 +47,14 @@ return array(
                         // )
                     )
                 ),
-                array(
-                    'id'       => '12',
-                    'title'    => '课程话题',
-                    'url'      => 'Admin/CourseTopic/index',
-                    'icon'     => 'circle-o',
-                    'path'     => '10,12',
-                    'children' => null
-                ),
+                // array(
+                //     'id'       => '12',
+                //     'title'    => '课程话题',
+                //     'url'      => 'Admin/CourseTopic/index',
+                //     'icon'     => 'circle-o',
+                //     'path'     => '10,12',
+                //     'children' => null
+                // ),
                 // array(
                 //     'id'       => '13',
                 //     'title'    => '课程问答',
@@ -139,14 +63,49 @@ return array(
                 //     'path'     => '10,13',
                 //     'children' => null
                 // ),
+                // array(
+                //     'id'       => '14',
+                //     'title'    => '课程资料',
+                //     'url'      => 'Admin/CourseMaterial/index',
+                //     'icon'     => 'circle-o',
+                //     'path'     => '10,14',
+                //     'children' => null
+                // )
+            )
+        ),
+        array(
+            'id'       => '6',
+            'title'    => '用户管理',
+            'icon'     => 'user',
+            'url'      => '#',
+            'path'     => '6',
+            'children' => array(
                 array(
-                    'id'       => '14',
-                    'title'    => '课程资料',
-                    'url'      => 'Admin/CourseMaterial/index',
+                    'id'       => '7',
+                    'title'    => '用户管理',
+                    'url'      => 'Admin/User/index',
                     'icon'     => 'circle-o',
-                    'path'     => '10,14',
+                    'path'     => '6,7',
                     'children' => null
-                )
+                ),
+            //    array(
+            //        'id'       => '8',
+            //        'title'    => '教师管理',
+            //     //    'url'      => 'Admin/Teacher/index',
+            //        'url'      => '',
+            //        'icon'     => 'circle-o',
+            //        'path'     => '6,8',
+            //        'children' => null
+            //    ),
+                // array(
+                //     'id'       => '9',
+                //     'title'    => '私信管理',
+                //     // 'url'      => 'Admin/Message/index',
+                //     'url'      => '',
+                //     'icon'     => 'circle-o',
+                //     'path'     => '6,9',
+                //     'children' => null
+                // )
             )
         ),
         array(
@@ -206,6 +165,48 @@ return array(
                     'children' => null
                 )
             )
-        )
+                ),
+                array(
+                    'id'       => '1',
+                    'title'    => '系统管理',
+                    'url'      => '#',
+                    'icon'     => 'gear',
+                    'path'     => '1',
+                    'children' => array(
+                        array(
+                            'id'       => '2',
+                            'title'    => '网站设置',
+                            'url'      => 'Admin/Setting/website',
+                            'icon'     => 'circle-o',
+                            'path'     => '1,2',
+                            'children' => null
+                        ),
+                        // array(
+                        //     'id'       => '3',
+                        //     'title'    => '用户设置',
+                        //     'url'      => 'Admin/Setting/user',
+                        //     'icon'     => 'circle-o',
+                        //     'path'     => '1,3',
+                        //     'children' => null
+                        // ),
+                        // array(
+                        //     'id'       => '4',
+                        //     'title'    => '课程设置',
+                        //     'url'      => 'Admin/Setting/course',
+                        //     'icon'     => 'circle-o',
+                        //     'path'     => '1,4',
+                        //     'children' => null
+                        // ),
+                        array(
+                            'id'       => '5',
+                            'title'    => '系统日志',
+                            'url'      => 'Admin/Setting/log',
+                            'icon'     => 'circle-o',
+                            'path'     => '1,5',
+                            'children' => null
+                        )
+                    )
+                ),
+                
     )
 );

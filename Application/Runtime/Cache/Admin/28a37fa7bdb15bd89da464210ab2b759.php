@@ -71,7 +71,7 @@
                         <div class="file-chooser-uploader-control" id="file-selected">
                           <div class="btn btn-default">
                             <i class="fa fa-folder-o fa-fw"></i> 选择文件
-                            <input type="file" id="video_file" @change="uploadCourseVideo"/>
+                            <input type="file"/>
                           </div>
                         </div>
                         <div class="progress file-chooser-uploader-progress" style="display: none;">
@@ -82,7 +82,7 @@
                         <div class="bg-warning file-chooser-uploader-progress-message"></div>
                         <div class="alert alert-info-c">
                           <ul>
-                            <li>支持<strong>mp4</strong>格式的视频文件上传，文件大小不能超过200M<strong></strong></li>
+                            <li>支持<strong>mp4</strong>格式的视频文件上传<strong></strong>。MP4文件的视频编码格式，请使用AVC(H264)编码，否则浏览器无法播放。</li>
                           </ul>
                         </div>
 

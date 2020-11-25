@@ -25,18 +25,18 @@
             <div class="course-item">
               <div class="course-img">
                 <a href="/edu/Home/Course/intro?course_id=<?php echo ($course["id"]); ?>" target="_blank">
-                  <img src="/edu/Public/images/course1.jpg" alt="网校基本设置" class="img-responsive">
+                  <img src="/edu/Public/images/course1.jpg" alt="课程展示系统基本设置" class="img-responsive">
                 </a>
               </div>
               <div class="course-info">
                 <div class="title">
-                  <a class="link-dark" href="/edu/course/4" target="_blank"><?php echo ($course["title"]); ?></a>
+                  <a class="link-dark" href="/edu/Home/Course/intro?course_id=<?php echo ($course["id"]); ?>" target="_blank"><?php echo ($course["title"]); ?></a>
                 </div>
                 <div class="metas clearfix">
-                  <span class="num"><i class="fa fa-user"></i><?php echo ($course["studentnum"]); ?></span>
-                  <span class="comment"><i class="fa fa-comment"></i><?php echo ($course["postnum"]); ?></span>
+                  <!-- <span class="num"><i class="fa fa-user"></i><?php echo ($course["studentnum"]); ?></span>
+                  <span class="comment"><i class="fa fa-comment"></i><?php echo ($course["postnum"]); ?></span> -->
                   <span class="views"><i class="fa fa-eye"></i><?php echo ($course["hitnum"]); ?></span>
-              <!--     <span class="course-price-widget">
+                  <!--  <span class="course-price-widget">
                     <span class="price">
                       <span class="text-warnning">免费</span>
                     </span>
@@ -61,9 +61,10 @@
     <!-- <div class="footer-link"></div> -->
     <!-- position:fixed; left:0px; right:0px; bottom:0px;height: 100px; -->
     <div class="copyright" style="background-color: #661B18; left: 0; bottom: 0; width: 100%; ">
-      <span style="color: aliceblue;">友情链接：</span><a href="www.zjnu.edu.cn" target="_blank" style="color: aliceblue;">浙江师范大学</a> |
-        <a href="www.wk.zjnu.edu.cn" lo target="_blank" style="color: aliceblue;">浙江师范大学文科实验教学中心首页</a> | 
-        <a href="http://localhost/edu/Admin/Index/index.html" target="_blank" style="color: aliceblue;">后台管理</a>
+      <span style="color: aliceblue;">友情链接：</span>
+        <!-- <a href="www.zjnu.edu.cn" target="_blank" style="color: aliceblue;">浙江师范大学</a> |
+        <a href="www.wk.zjnu.edu.cn" lo target="_blank" style="color: aliceblue;">浙江师范大学文科实验教学中心首页</a> |  -->
+        <a href="http://localhost/edu/Admin/Index/index.html" target="_blank" style="color: blue;text-decoration:underline">后台管理</a>
       <div class="container" style="color: aliceblue;">Copyright ©2020- wkzx.zjnu.edu.cn Corporation, All Rights Reserved
       </div>
     </div>
